@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Arquitectura de windows</title>
+  <link rel="icon" href="windows-logo.png" type="image/png">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="text-align:center;">
+<nav class="navbar navbar-expand-xl bg-primary navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Windows <i class='fab fa-windows' style='font-size:24px'></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="historia.html">Historia</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="seguridad.html">Seguridad</a>
+      </li>  
+         
+      <li class="nav-item">
+        <a class="nav-link" href="aplicaciones.html">Aplicaciones</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="versiones">Versiones.html</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="criticas.html">Criticas Y Polemicas</a>
+          
+      <li class="nav-item">
+        <a class="nav-link" href="framework.html">Frameworks Winodws</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="phone.html">Windows Phone</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="arquitectura.html">Arquitectura De Windows NT</a>
+      </li>  
+      
+      <li class="nav-item">
+        <a class="nav-link" href="surface.html">Microsoft Surface</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="creador.html">El Creador</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="referencias.html">Referencias</a>
+      </li>
+      </div>
+    </ul>
+  </div>
+</nav>
+<br>
+
+<div class="container pt-3" style="text-align:center;background:#fff;">
+ <div id="section1" class="container-fluid" style="padding-top:5px;padding-bottom:10px">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1><big><big><big>Arquitectura de Windows NT</big></big></big></h1>
+    
+  <article>
+    <p>La familia de los sistemas operativos Windows NT de Microsoft está constituida por versiones como Windows 10 (10.0), Windows 8.1 (6.3.9600), Windows 8 (6.2.9200), Windows 7 (6.1.7601), Windows Server 2008, Windows Vista (6.0.6002), Windows Server 2003, Windows XP (5.1.2600), Windows 2000 (5.0.2195) y Windows NT. Todos tienen multitarea apropiativa y son sistemas operativos reentrantes que han sido diseñados para trabajar tanto con computadoras con un sólo procesador como computadoras de multiprocesamiento simétrico que en inglés es el Symmetrical Multi Processor o SMP. Para procesar las peticiones de entrada/salida (en inglés Input/Output, I/O) acude a una dirección de paquetes de E/S que utiliza peticiones (IRPs) y E/S asíncrona. A partir de Windows XP, Microsoft comenzó a desarrollar sistemas operativos que soportaban 64-bits. Antes sus sistemas operativos estaban basados en un modelo de 32-bits.</p>
+    
+    <p>La arquitectura de Windows NT es altamente modular y se basa en dos capas principales:</p>
+    
+    <p>Modo usuario: Cuyos programas y subsistemas están limitados a los recursos del sistema a los que tienen acceso.
+Modo núcleo: Tiene acceso total a la memoria del sistema y los dispositivos externos. Los núcleos de los sistemas operativos de esta línea son todos conocidos como núcleos híbridos, aunque hay que aclarar que este término está en discusión ya que este núcleo es esencialmente un núcleo monolítico que está estructurado al estilo de un micronúcleo. La arquitectura dentro del modo núcleo se compone de lo siguiente:</p>
+
+  <ol>
+  <li>Un núcleo híbrido.</li>
+  <li>Una Capa de Abstracción de Hardware (HAL).</li>
+  <li>Controladores o drivers.</li>
+  <li>Executive: Sobre el cual son implementados todos los servicios de alto nivel.</li>
+  </ol>
+  
+  <p>El modo núcleo de la línea de Windows NT está compuesto por subsistemas capaces de pasar peticiones de E/S a los controladores apropiados usando el gestor de E/S. Dos subsistemas crean la capa del modo usuario de Windows 2000: el subsistema de Entorno (ejecuta aplicaciones escritas para distintos tipos de sistemas operativos), y el subsistema Integral (maneja funciones específicas de sistema de parte del subsistema de Entorno). El modo núcleo en Windows 2000 tiene acceso total al hardware y a los recursos del sistema de la computadora. El modo núcleo impide a los servicios del modo usuario y las aplicaciones acceder a áreas críticas del sistema operativo a las que no deberían tener acceso.</p>
+  
+  <br/>
+  <img class="img-fluid" src="images/windows-wallpaper.jpg" alt="Logotipo">
+  <br/>
+  <br/>
+  
+  <p>El Executive se relaciona con todos los subsistemas del modo usuario. Se ocupa de la entrada/salida, la gestión de objetos, la seguridad y la gestión de procesos. El núcleo se sitúa entre la Capa de Abstracción de Hardware y el Executive para proporcionar sincronización multiprocesador, hilos y programación y envío de interrupciones, y envío de excepciones.</p>
+  
+  <p>El núcleo también es responsable de la inicialización de los controladores de dispositivos al arrancar. Hay tres niveles de controladores en el modo núcleo: controladores de alto nivel, controladores intermedios y controladores de bajo nivel. El Modelo de controladores de Windows (en inglés Windows Driver Model, WDM) se encuentra en la capa intermedia y fue diseñado principalmente para mantener la compatibilidad en binario y en código fuente entre Windows 98 y Windows 2000. Los de más bajo nivel también son un legado de los controladores de dispositivos de Windows NT que controlan directamente un dispositivo, o pueden ser un bus hardware PnP.</p>
+  </article>
+  
+  </div>
+</div>
+  <div id="section2" class="container-fluid bg-primary" style="padding-top:5px;padding-bottom:5px">
+  <footer style="margin-top:40px;text-align:center;color:#fff;font-family:Arial">
+       <span>Esta Pagina Fue Hecha En 2020 N.T.S.</span>
+       <br/>
+       <h6>Pagina Educativa Sin Fines De Lucro</h6>
+  </footer>
+  </div>
+</body>
+</html>
